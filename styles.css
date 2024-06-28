@@ -1,0 +1,725 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    background-color: #000;
+}
+
+.caixa-principal {
+    height: 100vh;
+    width: 100%;
+    background-color: #000000fb;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+}
+
+.Portifolio {
+    
+    color: #ffffff;
+    font-size: 40px;
+
+}
+
+.Portifolio spam {
+    color: #f90000;
+    transition: 0.5s;
+}
+
+.Portifolio spam:hover {
+    color: #f90000;
+    background: #ffffff98;
+    font-size: 40px;
+    transition: 0.5s ease-in-out;
+    margin: 1px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 50px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+li spam {
+    color: #f90000;
+}
+
+li spam:hover {
+    color: #f90000;
+    font-size: 40px;
+    transition: 0.5s ease-in-out;
+    margin: 1px;
+}
+
+li:hover {
+    color: #f90000;
+    transition: 0.5s;
+    font-size: 40px;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li a spam:hover {
+    color: inherit;
+    font-size: inherit;
+    transition: inherit;
+    margin: inherit;
+}
+
+.container-video {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.video-a-direita {
+    position: absolute;
+    transform: translateY(-20%);
+    transform: scale(0.6);
+    margin-top: 10px;
+    right: 350px;
+}
+
+.video-de-fundo {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+}
+
+.meu-nome {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 55px;
+}
+
+h1 spam {
+    color: #f90000;
+    transition: 0.5s;
+
+}
+
+h1 spam:hover {
+    color: #f90000;
+    background: #ffffff98;
+    font-size: 75px;
+    transition: 0.5s ease-in-out;
+}
+
+.meu-nome h3 {
+    color: white;
+    font-size: 15px;
+}
+
+section {
+    display: flex;
+    padding: 60px 10%;
+    background-color: #000000;
+
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    margin-top: 5%;
+    margin-right: 15%;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border: 2px solid #f90000;
+    border-radius: 100%;
+}
+
+
+section div h2 {
+    color: white;
+    font-size: 75px;
+    margin-bottom: 50px;
+}
+
+section div h2 spam {
+    color: #f90000;
+    transition: 0.5s;
+}
+
+section div h2 spam:hover {
+    color: #f90000;
+    background: #ffffff98;
+    font-size: 75px;
+    transition: 0.5s ease-in-out;
+}
+
+
+section div p {
+    font-size: 25px;
+}
+
+.paragrafo {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.paragrafo .bold {
+    font-weight: bold;
+    color: #f91d00c7;
+    font-size: 18px;
+}
+
+section div button {
+    color: white;
+    background-color: #f90000;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+section div button:hover {
+    color: #f90000;
+    background: #ffffff98;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+
+.formulario-fale-comigo {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: left 1s ease-in-out;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(190, 189, 189);
+    padding-left: 5px;
+    outline-color: #C51111;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: #f1f1f1;
+    font-size: 16px;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid rgb(179, 177, 177);
+    padding: 5px;
+    outline-color: #C51111;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: #f1f1f1;
+    font-size: 16px;
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    transition: visibility 1s linear;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    transition: left 1s ease-in-out;
+}
+
+.container-img {
+    display: flex;
+    flex-direction: none;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 50%;
+
+}
+
+.whatsapp {
+    background-image: url('./img/whatsapp\ Dark.jpeg');
+    width: 6%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgb(255, 0, 0);
+    border-radius: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.whatsapp:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #C51111;
+    border-radius: 100%;
+}
+
+.instagram {
+    background-image: url('./img/instagran\ Dark.jpg');
+    width: 6%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgb(255, 0, 0);
+    border-radius: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.instagram:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #C51111;
+    border-radius: 100%;
+}
+
+.linkedin {
+    background-image: url('./img/LinkedIn\ Really\ Dark\ Icons.jpg');
+    width: 6%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgb(255, 0, 0);
+    border-radius: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.linkedin:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #C51111;
+    border-radius: 100%;
+}
+
+.github {
+    background-image: url('./img/Github\ Dark.jpeg');
+    width: 6%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgb(255, 0, 0);
+    border-radius: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.github:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #C51111;
+    border-radius: 100%;
+}
+
+.facebook {
+    background-image: url('./img/facebook\ Dark.jpeg');
+    width: 6%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgb(255, 0, 0);
+    border-radius: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.facebook:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #C51111;
+    border-radius: 100%;
+}
+
+.email {
+    background-image: url('./img/gmail\ Dark.jpg');
+    width: 6%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgb(255, 0, 0);
+    border-radius: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.email:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #C51111;
+    border-radius: 100%;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    margin-top: 5%;
+    margin-right: 15%;
+}
+
+.projeto-list {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+   }
+
+.projeto {
+    text-align: center;
+    border-radius: 100%;
+    }
+
+.projeto-1 {
+    background-image: url(/img/projeto/apple.jpg);
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #C51111;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: none;
+    padding: 10px;
+    gap: 50px;
+    margin: 10px;
+}
+
+.projeto-1:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #f1f1f1;
+    border-radius: 100%;
+}
+
+.projeto-2 {
+    background-image: url(img/projeto/temperatura.jpg);
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #C51111;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: none;
+    padding: 10px;
+    gap: 50px;
+    margin: 10px;
+}
+
+.projeto-2:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #f1f1f1;
+    border-radius: 100%;
+}
+
+.projeto-3 {
+    background-image: url(img/projeto/game.jpg);
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #C51111;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: none;
+    padding: 10px;
+    gap: 50px;
+    margin: 10px;
+}
+
+.projeto-3:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #f1f1f1;
+    border-radius: 100%;
+}
+
+.projeto-4 {
+    background-image: url(img/projeto/intagram.jpg);
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #C51111;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: none;
+    padding: 10px;
+    gap: 50px;
+    margin: 10px;
+}
+
+.projeto-4:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #f1f1f1;
+    border-radius: 100%;
+}
+
+.projeto-5 {
+    background-image: url(img/projeto/LOJA\ MKS.png);
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #C51111;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: none;
+    padding: 10px;
+    gap: 50px;
+    margin: 10px;
+}
+
+.projeto-5:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #f1f1f1;
+    border-radius: 100%;
+}
+
+.projeto-6 {
+    background-image: url(img/projeto/Mario.jpg);
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #C51111;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: none;
+    padding: 10px;
+    gap: 50px;
+    margin: 10px;
+}
+
+.projeto-6:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #f1f1f1;
+    border-radius: 100%;
+}
+
+.projeto-7 {
+    background-image: url(img/projeto/netflix.jpg);
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #C51111;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: none;
+    padding: 10px;
+    gap: 50px;
+    margin: 10px;
+}
+
+.projeto-7:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #f1f1f1;
+    border-radius: 100%;
+}
+
+.projeto-8 {
+    background-image: url(img/projeto/Starbuck.jpg);
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #C51111;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: none;
+    padding: 10px;
+    gap: 50px;
+    margin: 10px;
+}
+
+.projeto-8:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #f1f1f1;
+    border-radius: 100%;
+}
+
+/*.projeto-9 {
+    background-image: url(img/projeto/Starbuck.jpg);
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #C51111;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: none;
+    padding: 10px;
+    gap: 50px;
+    margin: 10px;
+}
+
+.projeto-9:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #f1f1f1;
+    border-radius: 100%;
+}
+
+.projeto-10 {
+    background-image: url(img/projeto/Starbuck.jpg);
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #C51111;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: none;
+    padding: 10px;
+    gap: 50px;
+    margin: 10px;
+}
+
+.projeto-10:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #f1f1f1;
+    border-radius: 100%;
+}
+
+.projeto-11 {
+    background-image: url(img/projeto/Starbuck.jpg);
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #C51111;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: none;
+    padding: 10px;
+    gap: 50px;
+    margin: 10px;
+}
+
+.projeto-11:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #f1f1f1;
+    border-radius: 100%;
+}
+
+.projeto-12 {
+    background-image: url(img/projeto/Starbuck.jpg);
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #C51111;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: none;
+    padding: 10px;
+    gap: 50px;
+    margin: 10px;
+}
+
+.projeto-12:hover {
+    transition: 0.5s ease-in-out;
+    border: 5px solid #f1f1f1;
+    border-radius: 100%;
+}*/
