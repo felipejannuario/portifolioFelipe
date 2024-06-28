@@ -13,13 +13,19 @@ function esconderForm() {
     mascara.style.visibility = "hidden";
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const audio = document.getElementById("myAudio");
+    ajustarVolume(0.2); // Define o volume para 20%
+    audio.play(); // Toca a música automaticamente
+});
+
 function ajustarVolume(volume) {
     const audio = document.getElementById("myAudio");
     audio.volume = volume;
 }
 
 // Ajuste de volume inicial
-ajustarVolume(0.40); // Define o volume inicial para 20%
+//ajustarVolume(0.40); // Define o volume inicial para 20%
 
 function abrirLink() {
     window.location.href = "https://example.com"; // Altere o link para o destino desejado
